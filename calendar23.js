@@ -2,8 +2,8 @@
 
 class Calendar23 {
 
-    constructor(container, scene=0, calendar_id = null, unix_time_stamp = null, additional = {}) {
-        this.scene = scene;//0,1,2
+    constructor(container, calendar_id = null, unix_time_stamp = null, additional = {}) {
+        this.scene = 0;//0,1,2
 
         this.month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         this.month_names_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -41,7 +41,7 @@ class Calendar23 {
         this.calendar_id = calendar_id;
 
         if (!this.calendar_id) {
-            this.calendar_id = this.create_id('calendar-');
+            this.calendar_id = woot_helper.create_id('calendar-');
         }
 
         //***
@@ -439,10 +439,6 @@ class Calendar23 {
 
         this.container.appendChild(years);
     }
-    
-     create_id(prefix = '') {
-        return prefix + Math.random().toString(36).substring(7);
-    }
 }
 
 //***
@@ -537,7 +533,7 @@ class Calendar23_Selector {
             }
         });
 
-        this.calendar_id = this.create_id('calendar23-');//for get selected
+        this.calendar_id = woot_helper.create_id('calendar23-');//for get selected
 
         //***
 
@@ -596,8 +592,6 @@ class Calendar23_Selector {
         container.appendChild(input);
         container.appendChild(wrapper);
     }
-
-   
 }
 
 
