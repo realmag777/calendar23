@@ -1,3 +1,18 @@
+/**
+ * @summary     Calendar23
+ * @description calendar on pure javascript
+ * @version     1.0.1
+ * @file        calendar23
+ * @author      realmag777
+ * @contact     https://pluginus.net/contact-us/
+ * @github      https://github.com/realmag777/calendar23
+ * @copyright   Copyright 2022 Rostislav Sofronov
+ *
+ * This source file is free software, available under the following license:
+ * MIT license - https://en.wikipedia.org/wiki/MIT_License .Basically that
+ * means you are free to use Calendar23 as long as this header is left intact.
+ */
+
 'use strict';
 
 class Calendar23 {
