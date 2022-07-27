@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar 23</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="calendar-23.css">
+        <script src="calendar-23.js"></script>
+    </head>
+    <body>
+        <div style="margin: 50px auto; width: 800px; display: flex;">
+        
+            <div id="calendar1"></div>
+            <span>&nbsp;</span>
+            <div id="calendar2"></div>
+            <span>&nbsp;</span>
+            <div id="calendar3"></div>
+        
+        </div>
+        
+        
+        <script>
+            
+            new Calendar23(document.getElementById('calendar1'),0);
+            new Calendar23(document.getElementById('calendar2'),1);
+            new Calendar23(document.getElementById('calendar3'),2);
+            
+        </script>
+    </body>
+</html>
